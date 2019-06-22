@@ -1,0 +1,291 @@
+/* ------------------------ #### This code is written by Norhan El-Deeb @2019 #### ------------------- */
+
+body {
+    font-family: 'Cabin', sans-serif;
+    color: black;
+    background: #fff;
+}
+
+
+/* --------------------------------------------------NavBar style-------------------------------------- */
+.navbar {
+    background: #0A0B12;
+}
+
+#navBar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.title {
+    font-family: 'Faster One', cursive;
+    color: #a30000;
+    font-size: 20px;
+}
+
+.navbar-icon {
+    font-size: 25px;
+    color: #a30000;
+}
+
+.navbar-toggler {
+    outline-color: #a30000 !important;
+}
+
+.nav-link {
+    color: #e8e9e7;
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    color: #a30000;
+}
+
+.nav-icons a {
+    text-decoration: none !important;
+}
+
+.nav-icons a:hover img {
+    transform: translateY(-8px);
+}
+
+
+/* --------------------------------------------------Header section style-------------------------------------- */
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* --------------------------------------------------Services section style-------------------------------------- */
+.section-title--special {
+    background: black;
+    color: #a30000;
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    font-family: 'Faster One', cursive;
+    font-size: 30px;
+}
+
+.services-icon {
+    font-size: 2rem;
+    color: #e8e9e7;
+    background: #0A0B12;
+}
+
+.services-icon:hover {
+    color: #a30000;
+}
+
+.services-underline {
+    width: 4rem;
+    height: 0.3rem;
+    background: #a30000;
+    margin: 1rem auto;
+}
+
+/* --------------------------------------------------Preloader section style-------------------------------------- */
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+}
+
+.hidePreloader {
+    display: none !important;
+}
+
+/* ----------------------------------------------Cars-showroom Section style------------------------------------ */
+.cars-showroom {
+    background: #e8e9e7;
+}
+
+.car-value {
+    background: #a30000;
+    color: #fff;
+}
+
+.car-value:hover {
+    background: black;
+}
+
+/* ----------------------------------------------FAQ Section style------------------------------------ */
+.faq {
+    background: url(./images/faq-backround.jpg)center/cover fixed no-repeat;
+}
+
+.faq-1 {
+    background: #0A0B12;
+    opacity: 0.75;
+}
+
+.faq-2 {
+    background: #a30000;
+    opacity: 0.75;
+}
+
+.faq-icon {
+    font-size: 4rem;
+    color: #e8e9e7;
+    transition: all 0.5s ease-in-out;
+}
+
+.faq-icon:hover {
+    transform: translateY(-10%);
+    color: #e8e9e7;
+}
+
+.faq-info {
+    color: #e8e9e7;
+}
+
+.faq-title {
+    color: #e8e9e7;
+}
+
+/* ----------------------------------------------New-Arrivals Section style------------------------------------ */
+.featured {
+    background: #e8e9e7;
+}
+
+.featured-item {
+    background: #fff;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.featured-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.featured-icon {
+    font-size: 1.5rem;
+    color: #a30000;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.img-container {
+    background: #e8e9e7;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-photo {
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .featured-photo {
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+
+.featured-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.featured-link:hover {
+    color: #a30000;
+}
+
+.img-container:hover .featured-link {
+    opacity: 1;
+}
+
+
+/* ----------------------------------------------Footer Section style------------------------------------ */
+#footer {
+    background: #0A0B12;
+    color: #e8e9e7;
+}
+
+.footer-box {
+    padding: 20px; 
+}
+
+.footer-box .fas {
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background:#a30000;
+}
+
+.footer-box .form-control {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn-primary {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background: #a30000;
+}
+
+hr {
+    background-color:#a30000;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
